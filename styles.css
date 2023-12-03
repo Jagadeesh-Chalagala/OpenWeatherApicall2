@@ -1,0 +1,138 @@
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #360369;
+    color: white;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#weatherHomePage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#weatherFetchingSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#weatherFetchingSection > h1{
+    font-size: 60px;
+    margin: 20px;
+}
+#weatherApiBtn{
+    padding: 10px 80px;
+    color: black;
+    background-color: white;
+}
+
+
+#weatherDataFetchPage{
+    display: none;
+}
+#weatherDataFetchPage h1{
+    font-size: 40px;
+    text-transform: capitalize;
+    
+}
+#weatherDataFetchPage > div{
+    padding: 10px 20px;
+}
+
+.topSection{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+}
+.topSection p{
+    font-size: 28px;
+    color: rgb(221, 221, 221);
+}
+#googleMap{
+    margin: 20px 0;
+}
+#googleMap > iframe{
+    width: 100%;
+    height: 450px;
+}
+
+
+.bottomSection{
+
+    background-color: white;
+    color: #360369;
+}
+
+.bottomSection h1{
+    margin: 20px 0;
+    height: 60%;
+}
+
+#weatherDetails{
+    margin: 30px 0;
+    display: flex;
+}
+
+#weatherDetails div{
+    background:#360369;
+}
+
+/* loader */
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+    display: none; /* Initially hide the loader */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/* utilities */
+
+.commonBtn{
+    padding: 10px 25px;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    background-color: #270846;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.detailscontainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 10px 0;
+}
+.detailscontainer > div{
+    padding:15px 30px;
+    background-color: #270846;
+    color: white;
+    border-radius: 5px;
+}
